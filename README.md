@@ -1,5 +1,5 @@
 # 🏥 Afya Karibu AI: Health Urgency Prediction for SDG 3
-
+![SymptomAnalyser](pexels-cottonbro-5473956.jpg)
 ## UN Sustainable Development Goal 3: Good Health and Well-being
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
