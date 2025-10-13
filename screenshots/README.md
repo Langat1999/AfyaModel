@@ -4,16 +4,24 @@ This directory contains screenshots for the Afya Karibu AI project documentation
 
 ## Required Screenshots
 
-To complete your submission, please add the following screenshots after running the project:
+Add the following screenshots after running the project.
 
-### 1. Data Analysis Dashboard
-**Filename**: `data_analysis.png`  
-**How to capture**: 
-- Run Jupyter notebook (`jupyter notebook afya_karibu_ml.ipynb`)
-- Execute cells in the "Data Exploration" section
-- Take screenshot of the visualization outputs
+### Data Analysis Dashboard
+
+**Filename**: `data_analysis.png`
+
+**How to capture**:
+
+- Run the Jupyter notebook:
+
+```bash
+jupyter notebook afya_karibu_ml.ipynb
+```
+
+- Execute cells in the Data Exploration section and take screenshots of visualization outputs.
 
 **Shows**:
+
 - Outcome distribution chart
 - Top 10 diseases bar chart
 - Symptom correlation heatmap
@@ -21,29 +29,40 @@ To complete your submission, please add the following screenshots after running 
 
 ---
 
-### 2. Model Performance
-**Filename**: `model_performance.png`  
+### Model Performance
+
+**Filename**: `model_performance.png`
+
 **How to capture**:
-- Continue through Jupyter notebook
-- Execute cells in "Model Evaluation" section
-- Screenshot the confusion matrix, ROC curve, and feature importance
+
+- Continue through the notebook to the Model Evaluation section.
+- Screenshot the confusion matrix, ROC curve, and feature importance.
 
 **Shows**:
-- Confusion Matrix
-- ROC Curve with AUC score
-- Feature Importance chart
+
+- Confusion matrix
+- ROC curve with AUC score
+- Feature importance chart
 - Classification metrics
 
 ---
 
-### 3. Streamlit Web App
-**Filename**: `streamlit_app.png`  
+### Streamlit Web App
+
+**Filename**: `streamlit_app.png`
+
 **How to capture**:
-- Run `streamlit run app.py`
-- Take full-page screenshot of the main interface
-- Show the input form and sidebar
+
+- Run the app:
+
+```bash
+streamlit run app.py
+```
+
+- Take a full-page screenshot of the main interface showing the input form and sidebar.
 
 **Shows**:
+
 - Main header and branding
 - Symptom input form (bilingual)
 - Patient profile inputs
@@ -51,14 +70,17 @@ To complete your submission, please add the following screenshots after running 
 
 ---
 
-### 4. Prediction Results
-**Filename**: `prediction_results.png`  
+### Prediction Results
+
+**Filename**: `prediction_results.png`
+
 **How to capture**:
-- In the Streamlit app, enter sample patient data
-- Click "Predict Health Urgency"
-- Screenshot the results section
+
+- In the Streamlit app, enter sample patient data and click "Predict Health Urgency".
+- Screenshot the results section.
 
 **Shows**:
+
 - Risk level prediction
 - Confidence score
 - Urgency gauge visualization
@@ -67,14 +89,22 @@ To complete your submission, please add the following screenshots after running 
 
 ---
 
-### 5. Command Line Interface (Optional)
-**Filename**: `cli_prediction.png`  
+### Command Line Interface (Optional)
+
+**Filename**: `cli_prediction.png`
+
 **How to capture**:
-- Run `python predict.py`
-- Complete an interactive prediction session
-- Screenshot the terminal output
+
+- Run the CLI prediction:
+
+```bash
+python predict.py
+```
+
+- Complete an interactive prediction session and screenshot the terminal output.
 
 **Shows**:
+
 - Interactive symptom input
 - Prediction results in terminal
 - Bilingual output (English/Swahili)
@@ -85,31 +115,34 @@ To complete your submission, please add the following screenshots after running 
 
 ### Best Practices
 
-1. **Resolution**: Minimum 1920x1080 for clarity
-2. **Format**: PNG or JPEG
-3. **Cropping**: Include relevant information, remove unnecessary whitespace
-4. **Annotations**: Optional - add arrows or text to highlight key features
-5. **Quality**: Ensure text is readable
+1. Resolution: Minimum 1920x1080 for clarity
+2. Format: PNG or JPEG
+3. Cropping: Include relevant information; remove unnecessary whitespace
+4. Annotations: Optional — add arrows or text to highlight key features
+5. Quality: Ensure text is readable
 
 ### Tools for Screenshots
 
 **Windows**:
+
 - Snipping Tool (Win + Shift + S)
 - PowerPoint (for annotations)
 
 **Mac**:
+
 - Command + Shift + 3 (full screen)
 - Command + Shift + 4 (selection)
 - Preview (for annotations)
 
 **Linux**:
+
 - gnome-screenshot
 - Shutter
 - Flameshot
 
 ### Adding to README
 
-After capturing screenshots, they will be automatically referenced in README.md:
+After capturing screenshots, include them in `README.md`:
 
 ```markdown
 ![Data Analysis](screenshots/data_analysis.png)
@@ -122,7 +155,8 @@ After capturing screenshots, they will be automatically referenced in README.md:
 
 ## Demo Video (Optional Enhancement)
 
-Consider also creating a short demo video (2-3 minutes) showing:
+Consider creating a short demo video (2–3 minutes) showing:
+
 1. Project overview
 2. Running the Streamlit app
 3. Making a prediction
@@ -132,6 +166,6 @@ Consider also creating a short demo video (2-3 minutes) showing:
 
 ---
 
-**Status**: 📷 Awaiting screenshots  
-**Updated**: October 2025
+**Status**: 📷 Awaiting screenshots
 
+**Updated**: October 2025

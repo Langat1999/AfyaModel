@@ -1,41 +1,38 @@
 # 🚀 Quick Start - Afya Karibu AI
 
-Get up and running in 5 minutes!
+This quick start helps you get the application running in under 5 minutes.
 
----
+## Requirements
 
-## Step 1: Install Python Packages (2 minutes)
+- Python 3.8+
+- Git (optional)
+
+## Steps
+
+1. Clone the repo
+
+```bash
+git clone https://github.com/yourusername/AfyaModel.git
+cd AfyaModel
+```
+
+1. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## Step 2: Train the Model (30 seconds)
-
-```bash
-python train_model.py
-```
-
-**Expected output**: 
-```
-✅ Model saved as 'afya_karibu_health_model.pkl'
-```
-
----
-
-## Step 3: Run the Demo (30 seconds)
-
-### Option A: Web App (Recommended)
+1. Run the app
 
 ```bash
 streamlit run app.py
 ```
 
-Opens in browser at: http://localhost:8501
+1. Train model (optional)
 
-### Option B: Command Line
+```bash
+python train_model.py
+```
 
 ```bash
 python predict.py
@@ -55,15 +52,17 @@ Full analysis with visualizations
 
 ## Step 4: Test a Prediction
 
-### Sample Patient Data:
+### Sample Patient Data
 
 **Symptoms:**
+
 - Fever: Yes
 - Cough: Yes
 - Fatigue: Yes
 - Difficulty Breathing: No
 
-**Profile:**
+- **Profile:**
+
 - Age: 35
 - Gender: Female
 - Blood Pressure: Normal
@@ -97,9 +96,10 @@ git push -u origin main
 
 ---
 
-## ✅ Done!
+## ✅ Done
 
 You now have:
+
 - ✓ Trained ML model
 - ✓ Working web application
 - ✓ Complete documentation
@@ -129,4 +129,3 @@ You now have:
 **Support**: All files include detailed comments
 
 🌍 Supporting UN SDG 3: Good Health and Well-being
-

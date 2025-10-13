@@ -1,4 +1,5 @@
-# 🚀 Afya Karibu AI - Complete Setup Guide
+
+# Afya Karibu AI Setup Guide
 
 This guide will walk you through setting up the Afya Karibu AI project from scratch.
 
@@ -6,14 +7,14 @@ This guide will walk you through setting up the Afya Karibu AI project from scra
 
 ## 📋 Table of Contents
 
-1. [Prerequisites](#prerequisites)
-2. [Installation](#installation)
-3. [Training the Model](#training-the-model)
-4. [Running the Web App](#running-the-web-app)
-5. [Using the Command-Line Interface](#using-the-command-line-interface)
-6. [Exploring the Jupyter Notebook](#exploring-the-jupyter-notebook)
-7. [Troubleshooting](#troubleshooting)
-8. [Next Steps](#next-steps)
+1. [Prerequisites](#1-prerequisites)
+2. [Installation](#2-installation)
+3. [Training the model](#3-training-the-model)
+4. [Running the web app](#4-running-the-web-app)
+5. [Using the command-line interface](#5-using-the-command-line-interface)
+6. [Exploring the jupyter notebook](#6-exploring-the-jupyter-notebook)
+7. [Troubleshooting](#7-troubleshooting)
+8. [Next steps](#8-next-steps)
 
 ---
 
@@ -30,7 +31,7 @@ This guide will walk you through setting up the Afya Karibu AI project from scra
 
 1. **Python** - [Download here](https://www.python.org/downloads/)
    - During installation, check "Add Python to PATH"
-   
+
 2. **Git** (optional, for cloning) - [Download here](https://git-scm.com/downloads)
 
 3. **Text Editor/IDE** (optional) - Choose one:
@@ -42,18 +43,21 @@ This guide will walk you through setting up the Afya Karibu AI project from scra
 
 ## 2. Installation
 
-### Step 1: Get the Code
+### Step 1: Get the code
 
-**Option A: Download ZIP**
+#### Option A: Download ZIP
+
 1. Download the project ZIP file
 2. Extract to your desired location
 3. Open terminal/command prompt
 4. Navigate to project folder:
-   ```bash
-   cd path/to/AfyaModel
-   ```
 
-**Option B: Clone with Git**
+```bash
+cd path/to/AfyaModel
+```markdown
+
+#### Option B: Clone with Git
+
 ```bash
 git clone https://github.com/yourusername/AfyaModel.git
 cd AfyaModel
@@ -68,6 +72,7 @@ python --version
 You should see: `Python 3.8.x` or higher
 
 **Windows users**: If `python` doesn't work, try `py` instead:
+
 ```bash
 py --version
 ```
@@ -79,6 +84,7 @@ pip install -r requirements.txt
 ```
 
 This will install all required packages:
+
 - pandas (data manipulation)
 - scikit-learn (machine learning)
 - streamlit (web app)
@@ -104,13 +110,15 @@ python train_model.py
 ```
 
 **What this does**:
+
 - Loads the health dataset
 - Preprocesses the data
 - Trains 3 different ML models
 - Selects the best model
 - Saves the model as `afya_karibu_health_model.pkl`
 
-**Expected output**:
+**Expected output** (sample):
+
 ```
 ==================================================
 🏥 AFYA KARIBU AI - MODEL TRAINING
@@ -153,11 +161,13 @@ jupyter notebook afya_karibu_ml.ipynb
 ```
 
 This will:
+
 1. Open Jupyter in your browser
 2. Show the complete ML workflow with visualizations
 3. Allow you to experiment and modify the code
 
-**To run**: 
+**To run**:
+
 - Click "Cell" → "Run All"
 - Or use keyboard shortcut: Shift + Enter for each cell
 
@@ -172,11 +182,12 @@ streamlit run app.py
 ```
 
 **Expected output**:
-```
+
 You can now view your Streamlit app in your browser.
 
-Local URL: http://localhost:8501
-Network URL: http://192.168.x.x:8501
+Local URL: <http://localhost:8501>
+Network URL: <http://192.168.x.x:8501>
+
 ```
 
 The app will automatically open in your default browser.
@@ -219,6 +230,7 @@ python predict.py
 
 ```
 ==================================================
+
 🏥 AFYA KARIBU AI - HEALTH URGENCY PREDICTION
 ==================================================
 
@@ -315,11 +327,13 @@ jupyter notebook
 #### Issue 1: "python: command not found"
 
 **Solution (Windows)**:
+
 ```bash
 py train_model.py
 ```
 
 **Solution (Mac/Linux)**:
+
 ```bash
 python3 train_model.py
 ```
@@ -327,11 +341,13 @@ python3 train_model.py
 #### Issue 2: "No module named 'pandas'" (or other packages)
 
 **Solution**:
+
 ```bash
 pip install --upgrade -r requirements.txt
 ```
 
 **If pip doesn't work**:
+
 ```bash
 python -m pip install --upgrade -r requirements.txt
 ```
@@ -339,6 +355,7 @@ python -m pip install --upgrade -r requirements.txt
 #### Issue 3: "Model file not found"
 
 **Solution**: Train the model first:
+
 ```bash
 python train_model.py
 ```
@@ -346,11 +363,13 @@ python train_model.py
 #### Issue 4: Streamlit app won't start
 
 **Solution 1** - Check if port 8501 is already in use:
+
 ```bash
 streamlit run app.py --server.port 8502
 ```
 
 **Solution 2** - Clear Streamlit cache:
+
 ```bash
 streamlit cache clear
 ```
@@ -358,15 +377,18 @@ streamlit cache clear
 #### Issue 5: Jupyter notebook won't open
 
 **Solution**:
+
 ```bash
 pip install --upgrade jupyter
 jupyter notebook --no-browser
 ```
+
 Then manually open the URL shown in terminal.
 
 #### Issue 6: Import errors in notebook
 
 **Solution**: Install jupyter kernel:
+
 ```bash
 pip install ipykernel
 python -m ipykernel install --user --name afya --display-name "Afya Karibu"
@@ -381,21 +403,25 @@ Then in Jupyter: Kernel → Change Kernel → Afya Karibu
 ### After Setup is Complete
 
 ✅ **Explore the Data**
+
 - Open Jupyter notebook
 - Examine data distributions
 - Try different visualizations
 
 ✅ **Test the Model**
+
 - Use the web app with different symptom combinations
 - Test edge cases (all symptoms, no symptoms)
 - Check predictions for different age groups
 
 ✅ **Customize the Project**
+
 - Modify the Streamlit app appearance
 - Add new features to the dataset
 - Experiment with different ML algorithms
 
 ✅ **Share Your Work**
+
 - Create a GitHub repository
 - Take screenshots for your README
 - Write your experience article
@@ -404,16 +430,19 @@ Then in Jupyter: Kernel → Change Kernel → Afya Karibu
 ### Advanced Tasks
 
 🔧 **Improve the Model**:
+
 - Collect more diverse data
 - Try deep learning (Neural Networks)
 - Implement hyperparameter tuning
 
 🌐 **Deploy Online**:
+
 - Streamlit Cloud (free hosting)
 - Heroku
 - AWS/GCP/Azure
 
 📱 **Build Mobile App**:
+
 - React Native
 - Flutter
 - Android Studio
@@ -433,7 +462,7 @@ Then in Jupyter: Kernel → Change Kernel → Afya Karibu
 
 - **GitHub Issues**: Report bugs or ask questions
 - **PLP Academy Forum**: Community support
-- **Email**: your.email@example.com
+- **Email**: <your.email@example.com>
 
 ### Useful Commands Reference
 
@@ -478,15 +507,14 @@ pip install --upgrade -r requirements.txt
 
 ---
 
-**Congratulations! 🎉**
+## Congratulations! 🎉
 
 You're now ready to use and contribute to Afya Karibu AI!
 
-*Supporting UN SDG 3: Good Health and Well-being 🌍*
+### Supporting UN SDG 3: Good Health and Well-being 🌍
 
 ---
 
 **Last Updated**: October 2025  
 **Version**: 1.0  
 **Maintained by**: Afya Karibu Team
-

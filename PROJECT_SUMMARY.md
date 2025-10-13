@@ -6,21 +6,21 @@
 
 ## 📁 Project Structure
 
-```
+```text
 AfyaModel/
 │
-├── 📊 DATA
+├── DATA
 │   └── Disease_symptom_and_patient_profile_dataset.csv
 │
-├── 📓 NOTEBOOKS
+├── NOTEBOOKS
 │   └── afya_karibu_ml.ipynb (Main ML workflow)
 │
-├── 🐍 PYTHON SCRIPTS
+├── PYTHON SCRIPTS
 │   ├── train_model.py (Model training script)
 │   ├── predict.py (CLI prediction tool)
 │   └── app.py (Streamlit web application)
 │
-├── 📝 DOCUMENTATION
+├── DOCUMENTATION
 │   ├── README.md (Main project documentation)
 │   ├── ARTICLE.md (Blog post for PLP submission)
 │   ├── ETHICAL_REFLECTION.md (Bias analysis & ethics)
@@ -28,10 +28,10 @@ AfyaModel/
 │   ├── SETUP_GUIDE.md (Installation instructions)
 │   └── PROJECT_SUMMARY.md (This file)
 │
-├── 🖼️ SCREENSHOTS
+├── SCREENSHOTS
 │   └── README.md (Screenshot guidelines)
 │
-└── ⚙️ CONFIGURATION
+└── CONFIGURATION
     └── requirements.txt (Python dependencies)
 ```
 
@@ -39,7 +39,7 @@ AfyaModel/
 
 ## 🎯 Assignment Requirements Checklist
 
-### ✅ 1. Code (Python notebook or script)
+### 1. Code (Python notebook or script)
 
 - [x] **afya_karibu_ml.ipynb** - Comprehensive Jupyter notebook with:
   - Data exploration and visualization
@@ -47,12 +47,12 @@ AfyaModel/
   - Model training (3 algorithms)
   - Evaluation metrics
   - Comments explaining workflow
-  
+
 - [x] **train_model.py** - Standalone training script
 - [x] **predict.py** - CLI prediction interface
 - [x] **app.py** - Web application
 
-### ✅ 2. Report (1-page summary)
+### 2. Report (1-page summary)
 
 - [x] **README.md** contains:
   - ✓ SDG problem addressed (SDG 3: Good Health and Well-being)
@@ -60,21 +60,22 @@ AfyaModel/
   - ✓ Results (92% accuracy, 0.94 AUC)
   - ✓ Ethical considerations
 
-### ✅ 3. Presentation (5-minute demo)
+### 3. Presentation (5-minute demo)
 
 - [x] **PITCH_DECK.md** - Complete 20-slide presentation
 - [x] **Streamlit app** - Live interactive demo
 - [ ] **Screenshots** - Pending (see screenshots/README.md)
 
-### ✅ 4. GitHub Repository
+### 4. GitHub Repository
 
 **What to include**:
+
 - [x] All code files
 - [x] README with intro and screenshots
 - [x] requirements.txt
 - [ ] Initialize Git repository (see instructions below)
 
-### ✅ 5. Article for PLP Academy Community
+### 5. Article for PLP Academy Community
 
 - [x] **ARTICLE.md** - Comprehensive article explaining:
   - SDG problem
@@ -82,7 +83,7 @@ AfyaModel/
   - Technical implementation
   - Real-world impact
 
-### ✅ 6. Pitch Deck for Peer Review
+### 6. Pitch Deck for Peer Review
 
 - [x] **PITCH_DECK.md** - Elevator pitch with:
   - Problem statement
@@ -162,31 +163,36 @@ jupyter notebook afya_karibu_ml.ipynb
 ### For GitHub Repository
 
 1. **Initialize Git**:
+
 ```bash
 git init
 git add .
 git commit -m "Initial commit: Afya Karibu AI - SDG 3 Health Prediction"
 ```
 
-2. **Create GitHub Repo**:
-- Go to github.com
+1. **Create GitHub Repo**:
+
+- Go to [GitHub](https://github.com)
 - Click "New Repository"
 - Name: `AfyaModel` or `afya-karibu-ai`
 - Description: "AI-powered health urgency prediction for SDG 3"
 - Public repository
 - Don't initialize with README (we already have one)
 
-3. **Push to GitHub**:
+1. **Push to GitHub**:
+
 ```bash
 git remote add origin https://github.com/yourusername/AfyaModel.git
 git branch -M main
 git push -u origin main
 ```
 
-4. **Add Screenshots**:
+1. **Add Screenshots**:
+
 - Run the project and capture screenshots (see screenshots/README.md)
 - Add them to screenshots/ folder
 - Commit and push:
+
 ```bash
 git add screenshots/
 git commit -m "Add project screenshots"
@@ -217,27 +223,32 @@ git push
 
 ### Suggested Presentation Flow
 
-**Minute 1: Problem Introduction (30 sec + 30 sec)**
-- "60% of rural Kenyans lack timely healthcare access"
-- "UN SDG 3 aims for universal health coverage"
+### Minute 1 — Problem Introduction (60 sec)
+
+- 60% of rural Kenyans lack timely healthcare access
+- UN SDG 3 aims for universal health coverage
 - Show statistics, make it relatable
 
-**Minute 2: Solution Overview (60 sec)**
-- "Afya Karibu AI predicts health urgency from symptoms"
+### Minute 2 — Solution Overview (60 sec)
+
+- Afya Karibu AI predicts health urgency from symptoms
 - Show web app interface
 - Explain bilingual support (English/Swahili)
 
-**Minute 3: Live Demo (90 sec)**
+### Minute 3 — Live Demo (90 sec)
+
 - Enter sample patient data in Streamlit app
 - Show prediction results
 - Explain confidence scores and recommendations
 
-**Minute 4: Technical Details (60 sec)**
-- "Supervised learning with Random Forest"
+### Minute 4 — Technical Details (60 sec)
+
+- Supervised learning with Random Forest
 - Show performance metrics (92% accuracy)
 - Quick look at Jupyter notebook visualizations
 
-**Minute 5: Impact & Ethical Considerations (60 sec)**
+### Minute 5 — Impact & Ethical Considerations (60 sec)
+
 - Potential to reach 10M users
 - Bias mitigation strategies
 - Call to action / Next steps
@@ -292,10 +303,10 @@ If you want to extend the project:
 
 ### Useful Links
 
-- **Streamlit Docs**: https://docs.streamlit.io
-- **Scikit-learn**: https://scikit-learn.org
-- **UN SDG 3**: https://sdgs.un.org/goals/goal3
-- **Markdown Guide**: https://www.markdownguide.org
+- **Streamlit Docs**: [docs.streamlit.io](https://docs.streamlit.io)
+- **Scikit-learn**: [scikit-learn.org](https://scikit-learn.org)
+- **UN SDG 3**: [sdgs.un.org/goal3](https://sdgs.un.org/goals/goal3)
+- **Markdown Guide**: [markdownguide.org](https://www.markdownguide.org)
 
 ---
 
@@ -328,7 +339,7 @@ If you want to extend the project:
 
 ---
 
-## 🎉 Congratulations!
+## 🎉 Congratulations
 
 You've completed a comprehensive AI for SDG project that demonstrates:
 
@@ -342,7 +353,7 @@ You've completed a comprehensive AI for SDG project that demonstrates:
 
 ---
 
-*"AI can be the bridge between innovation and sustainability." — UN Tech Envoy*
+> "AI can be the bridge between innovation and sustainability." — UN Tech Envoy
 
 **Afya Karibu AI** 🌍 Supporting UN SDG 3: Good Health and Well-being
 
@@ -351,4 +362,3 @@ You've completed a comprehensive AI for SDG project that demonstrates:
 **Last Updated**: October 2025  
 **Project Status**: ✅ Complete and Ready for Submission  
 **Next Steps**: Capture screenshots → Create GitHub repo → Submit!
-
