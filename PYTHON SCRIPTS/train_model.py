@@ -16,7 +16,7 @@ from sklearn.metrics import classification_report, accuracy_score, roc_auc_score
 import warnings
 warnings.filterwarnings('ignore')
 
-def load_and_preprocess_data(filepath='Disease_symptom_and_patient_profile_dataset.csv'):
+def load_and_preprocess_data(filepath='../DATA/Disease_symptom_and_patient_profile_dataset.csv'):
     """Load and preprocess the health dataset."""
     print("="*50)
     print("🏥 AFYA KARIBU AI - MODEL TRAINING")
@@ -131,7 +131,7 @@ def train_models(X_train, y_train, X_test, y_test):
     return best_model, results[best_model_name]
 
 def save_model(model, scaler, label_encoders, target_encoder, feature_names, 
-               filename='afya_karibu_health_model.pkl'):
+               filename='../MODELS/afya_karibu_health_model.pkl'):
     """Save the trained model and preprocessing objects."""
     print(f"\n💾 Saving model...")
     
@@ -180,9 +180,9 @@ def main():
     print("🎉 MODEL TRAINING COMPLETE!")
     print("="*50)
     print("\nNext steps:")
-    print("1. Run 'streamlit run app.py' to launch the web demo")
-    print("2. Open Jupyter notebook for detailed analysis")
-    print("3. Review ETHICAL_REFLECTION.md for bias considerations")
+    print("1. Run 'streamlit run PYTHON SCRIPTS/app.py' to launch the web demo")
+    print("2. Open NOTEBOOKS/afya_karibu_ml.ipynb for detailed analysis")
+    print("3. Review DOCUMENTATION/ETHICAL_REFLECTION.md for bias considerations")
     print("\n")
 
 if __name__ == "__main__":

@@ -9,7 +9,7 @@ import pickle
 import pandas as pd
 import sys
 
-def load_model(filepath='afya_karibu_health_model.pkl'):
+def load_model(filepath='../MODELS/afya_karibu_health_model.pkl'):
     """Load the trained model."""
     try:
         with open(filepath, 'rb') as f:
