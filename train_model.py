@@ -16,7 +16,8 @@ from sklearn.metrics import classification_report, accuracy_score, roc_auc_score
 import warnings
 warnings.filterwarnings('ignore')
 
-def load_and_preprocess_data(filepath='../DATA/Disease_symptom_and_patient_profile_dataset.csv'):
+def load_and_preprocess_data(filepath = 'DATA/Disease_symptom_and_patient_profile_dataset.csv'
+):
     """Load and preprocess the health dataset."""
     print("="*50)
     print("🏥 AFYA KARIBU AI - MODEL TRAINING")
